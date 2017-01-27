@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html>
-<title>Luís Silva ☕</title>
+<head>
+<title>Luís Silva</title>
+<link rel="shortcut icon" type="image/x-icon" href="e-book.ico" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
 <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 
 <script src="https://use.fontawesome.com/08c796efa3.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: 'Slabo 27px', serif;}
 body, html {
@@ -27,6 +44,7 @@ p{font-size:25px}
 
 
 </style>
+</head>
 <body>
 
 <div class="w3-container w3-black">
@@ -37,11 +55,12 @@ p{font-size:25px}
       <li>Thinks of himself as a very creative mind</li>
       <li>Kind of lazy</li>
     </ol>
-  <i class="fa fa-chevron-down" aria-hidden="true" style="margin: 10% 50% 1% 50%;"> </i>
+  <a href="#section01"><i class="fa fa-chevron-down" aria-hidden="true" style="margin: 10% 50% 1% 50%;"></i></a>
 
 </div>
 
 <!-- Container (About Section) -->
+<section id="section01" class="demo">
 <div class="w3-content w3-container w3-padding-64">
   <h3 class="w3-center">ABOUT ME</h3>
   <p class="w3-center"><em>I love Anecdotes, Nihilism And</em></p>
@@ -74,6 +93,6 @@ More about me?</p>
   </span>
 </div>
 </div>
-
+</section>
 </body>
 </html>
