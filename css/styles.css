@@ -1,10 +1,15 @@
+:root {
+  --main-bg-color-dark: #375E97;
+  --main-font-color-dark: #FB6542;
+}
+
 html, body {
   height: 100%;
   margin: 0;
 }
 
 .dictpage {
-  background-color: black;
+  background-color: var(--main-bg-color-dark);
   min-height: 100%;
 }
 
@@ -31,11 +36,15 @@ html, body {
 
 
 li{
-  font-size: 20px;
-  margin: 10px;
+  font-size: 25px;
+  margin: 3px;
 }
 
 h1, h2, h3, h4, h5 , ol{
   color: white;
   margin: 0;
+}
+
+#changeable{
+  color: #eaeaea;
 }
