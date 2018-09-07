@@ -1,98 +1,41 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Luís Silva</title>
-<link rel="shortcut icon" type="image/x-icon" href="e-book.ico" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/w3.css">
-<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+<!doctype html>
 
-<script src="https://use.fontawesome.com/08c796efa3.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
-      });
-    }
-  });
-});
-</script>
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: 'Slabo 27px', serif;}
-body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
-}
-h1{font-size:70px;word-break: keep-all;}
-h2{font-size:30px}
-p{font-size:25px}
-/* First image (Logo. Full height) */
-.w3-container {
-    min-height: 100%;
-}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
 
-.w3-hover-opacity {cursor: pointer;}
+    <title>Hi</title>
+    <meta name="description" content="My corner in the World Wide Web">
+    <meta name="author" content="Luís Silva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-</style>
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet"> 
 
-<div class="w3-container w3-black">
-    <h1 style="margin:15% 10% 1px 10%;">Lu•ís Sil•va   <small style="font-size:27px;">[luíɛs ˈsɪlvə]</small> :</h1>
-    <h2 style="margin: 0 10% 1px 10%;"> name</h2>
-    <ol class="w3-ul" style="margin: 0 10% 1px 8%;">
-      <li>A person that consumes an enormous amount of coffee to properly function</li>
-      <li>Thinks of himself as a very creative mind</li>
-      <li>Kind of lazy</li>
-    </ol>
-  <a href="#section01" style="position: absolute;bottom: 1%;left: 50%;"><i class="fa fa-chevron-down" aria-hidden="true" style="margin: 10% 50% 1% 50%;"></i></a>
+  </head>
 
-</div>
+  <body>
+    <div class="dictpage"/>
+      <div class="dictdiv">
+        <div class="flexbox">
+          <div class="item-1">
+            <h1>Lu•ís Sil•va</h1>
+          </div>
+          <div class="item-2">
+            <h2>[luíɛs ˈsɪlvə]</h5>
+          </div>
+        </div>
+        <h3> name</h1>
+        <ol>
+          <li>A person that consumes an enormous amount of coffee to properly function</li>
+          <li>Thinks of himself as a very creative mind</li>
+          <li>Kind of lazy</li>
+        </ol>
+      </div>
+    <div class="about">About</div>
+    <div class="portfolio">Portfolio</div>
 
-<!-- Container (About Section) -->
-<section id="section01" class="demo" style="min-height: 100%;">
-<div class="w3-content w3-container w3-padding-64">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love Anecdotes, Nihilism And</em></p>
-  <p>Programing. My name is Luís Silva, 21 years old and I'm just another guy with big dreams of a more technological world and well-balanced society.
-I'm studying Computer Science at the University of Aveiro, Portugal.
-More about me?</p>
-  <div class="w3-panel w3-leftbar">
-<p>
- <i class="fa fa-quote-right w3-xxlarge"></i><br>
- <i class="w3-serif w3-xlarge">
- Awesome and Handsome</i>
-</p>
-<p> Mother
-</div>
-<div class="w3-center">
-  <span class="fa-stack fa-lg" >
-    <a href="https://www.facebook.com/ofantasticoluis">
-    <i class="fa fa-square fa-stack-2x"></i>
-    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i></a>
-  </span>
-  <span class="fa-stack fa-lg">
-    <a href="https://github.com/LudeeD">
-    <i class="fa fa-square fa-stack-2x"></i>
-    <i class="fa fa-github fa-stack-1x fa-inverse"></i></a>
-  </span>
-  <span class="fa-stack fa-lg">
-    <a href="https://plus.google.com/108396874256042167307">
-    <i class="fa fa-square fa-stack-2x"></i>
-    <i class="fa fa-google fa-stack-1x fa-inverse"></i></a>
-  </span>
-</div>
-</div>
-</section>
-</body>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
