@@ -1,7 +1,8 @@
 <!doctype html>
 
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
 
     <title>Hi</title>
@@ -12,50 +13,52 @@
 
 
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
-    <div class="header" style="visibility: hidden;"></div>
-
-
-    <div class="dictpage"/>
-      <div class="dictdiv">
+<body>
+    <div class="dictpage" />
+    <div class="dictdiv">
         <div class="flexbox">
-          <div class="item-1">
-            <h1>Lu•ís Sil•va</h1>
-          </div>
-          <div class="item-2">
-            <h2>[luíɛs ˈsɪlvə]</h5>
-          </div>
+            <div class="item-1">
+                <h1>Lu•ís Sil•va</h1>
+            </div>
+            <div class="item-2">
+                <h2>[luíɛs ˈsɪlvə]</h2>
+            </div>
         </div>
-        <h3> name</h1>
+        <h3>name</h3>
         <ol>
-          <li>A person that consumes an enormous amount of coffee to properly function</li>
-          <li>Thinks of himself as a very creative mind</li>
-          <li>Kind of <strong id="changeable">lazy</strong></li>
+            <li>A person that consumes an enormous amount of coffee to properly function</li>
+            <li>Thinks of himself as a very creative mind</li>
+            <li>Kind of <strong id="changeable">lazy</strong></li>
         </ol>
-      </div>
+    </div>
     </div>
 
-    <div class="aboutpage" style="visibility: hidden;">About</div>
+    <div class="aboutpage">
+        <div class="about_me_title" style="padding-top: 10vh;">
+            <div class="flexbox-center">
+                <h1 style="padding-right: 50px; padding-left: 50px; align-self: center;">About Me</h1>
+                <img src="new.jpg" alt="It's a Me... Not Mario"
+                    style="width: 200px;height: 200px;padding-right: 50px; padding-left: 50px;">
+            </div>
+            <div class="flexbox-center" style="">
+                <p style="max-width: 500px;text-align:justify;font-size: 21px;padding: 25px">
+                    My name is Luís Silva,<br/> 
+                    a <a id=time-elapsed></a> years old boy and I'm just another guy with big dreams of a more technological
+                    world and well-balanced society.
+                    I'm studying Computer Science at the University of Aveiro, Portugal.
+                    <br>
+                    More about me?</p>
+            </div>
+        </div>
+    </div>
     <div class="portfoliopage" style="visibility: hidden;">Portfolio</div>
 
-    <script src="js/scripts.js"></script>
-  </body>
+</body>
 
-  <script>
-    var compliments = ["funny", "interesting", "awesome", "lazy"]
-    var currIndex = 0
+<script src="js/crazyscripts.js"></script>
 
-    window.setInterval(dispatchFunction, 2000);
-
-    function dispatchFunction(){
-      if (currIndex === compliments.length) currIndex = 0
-      choosen = compliments[currIndex];
-      currIndex += 1
-      document.getElementById("changeable").innerHTML = ""+ choosen;
-    }
-  </script>
 </html>

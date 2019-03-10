@@ -23,6 +23,31 @@ html, body {
   flex-wrap: wrap;
 }
 
+.dictpage h1, h2, h3, h4, h5 , ol{
+  color: white;
+  margin: 0;
+}
+
+.flexbox-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.aboutpage {
+  min-height: 100%;
+}
+
+.flexbox-center h1, h5 {
+  font-family: 'Slabo 27px', serif;
+  color: Black;
+  margin: 0;
+}
+
+#table_about{
+  margin-top: 1rem;
+}
+
 .item-1 {
   font-size: 50px;
   align-self: flex-end;
@@ -34,16 +59,10 @@ html, body {
   padding: 0 0 23px 20px;
 }
 
-
 li{
-  font-size: 25px;
-  margin: 3px;
+  font-size: 21px;
 }
 
-h1, h2, h3, h4, h5 , ol{
-  color: white;
-  margin: 0;
-}
 
 #changeable{
   color: #eaeaea;
