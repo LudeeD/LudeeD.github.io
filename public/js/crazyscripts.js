@@ -1,4 +1,4 @@
-var compliments = ["funny", "interesting", "awesome", "lazy","nice"]
+var compliments = ["funny", "interesting", "awesome", "lazy", "nice", "a GIT lover"]
 var currIndex = 0
 
 function dispatchFunction(){
@@ -8,21 +8,16 @@ function dispatchFunction(){
     document.getElementById("changeable").innerHTML = ""+ choosen;
 }
 
+function getAge(){
+    var currDate = new Date();
+    var birthDate = new Date(1996,12,19);
 
-var currTime = new Date();
+    var secDiff = (currDate - birthDate) / 1000;
 
-var day = currTime.getDay();
-var month = currTime.getMonth();
-var year = currTime.getFullYear()
+    let years = Math.trunc(secDiff / 31536000);
 
-var my_age = year - 1996 - 1;
-
-if (month == 11){
-    console.log("month december");
-    if( day >= 19){
-        my_age = my_age + 1;
-    }
+    return years;
 }
 
-document.getElementById("time-elapsed").innerHTML = ""+my_age+" years";
+document.getElementById("time-elapsed").innerHTML = ""+getAge()+" years";
 window.setInterval(dispatchFunction, 2000);
