@@ -66,6 +66,14 @@
         > where we are trying to shape the future of healthcare 👨‍⚕️. We work with
         AI, computer vision and powerfull embedded systems.
     </p>
+
+    <p>
+        I also try and maintain my very own digital garden 🌱, where I write
+        about <a
+            class="underline underline-offset-4 decoration-2 hover:decoration-fuchsia-400"
+            href="https://garden.ludeed.com">stuff</a
+        >.
+    </p>
 </div>
 
 <div class="mt-10 flex flex-col gap-2">
