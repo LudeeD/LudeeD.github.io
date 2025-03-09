@@ -81,7 +81,7 @@
     <div class="flex flex-row justify-evenly flex-wrap">
         <a
             class="underline underline-offset-4 decoration-2 hover:decoration-blue-400"
-            href="https://twitter.com/ludeed">Twitter</a
+            href="https://bsky.app/profile/luissilva.eu">Bluesky</a
         >
         <a
             class="underline underline-offset-4 decoration-2 hover:decoration-blue-400"
